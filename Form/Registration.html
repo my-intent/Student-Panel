@@ -3,14 +3,73 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<title>Student Panel</title>
-	<link rel="stylesheet" href="style.css" >
+	<title>New Registration</title>
+	<link rel="stylesheet" href="../css/style.css" >
 </head>
 <body>
 	<div class="container">
-		<h1>New Registration</h1>
-		<form action="Registration.php" method="get">
-			<input type="submit">
+		<h1 class="heading">New Registration</h1>
+
+		<form action="#" method="get">
+			<div class="box">
+				<label for="name">Full Name </label>
+				<input type="text" id="name" class="input-field" name="uname" placeholder="start typing name" required>
+			</div>
+
+			<div class="box">
+				<label for="email">Email </label>
+				<input type="email" id="email" class="input-field" name="email" placeholder="start typing email" required>
+			</div>
+
+			<div class="box">
+				<label for="date-of-birth">Date of Birth</label>
+				<input type="date" id="date-of-birth" name="date-of-birth">
+			</div>
+			
+			<div class="box">
+				<label>Select Gender </label><br><br>
+				<span>
+					<label for="male">Male</label>
+					<input type="radio" id="male" name="Gender" checked>
+				</span>
+				<span>
+					<label for="female">female</label>
+					<input type="radio" id="female" name="Gender">
+				</span>
+				<span>
+					<label for="other">Other</label>
+					<input type="radio" id="other" name="Gender">
+				</span>
+			</div>
+
+			<div class="box">
+				<label>Select Department <label><br><br>
+				<span>
+					<label for="bca">BCA</label>
+					<input type="checkbox" id="bca" name="dept" value="BCA">
+				</span>
+				<span>
+					<label for="bba">BBA</label>
+					<input type="checkbox" id="bba" name="dept" value="BBA">
+				</span>
+				<span>
+					<label for="bsc-it">BSC.IT</label>
+					<input type="checkbox" id="bsc-it" name="dept" value="BSC.IT">
+				</span>
+				<span>
+					<label for="b-com">B.COM</label>
+					<input type="checkbox" id="b-com" name="dept" value="B.COM">
+				</span>
+			</div>
+
+			<div class="box">
+				<label for="pass">Enter Password </label>
+				<input type="password" id="pass" class="input-field" name="upass" placeholder="start typing password" required>
+			</div>
+			<div class="btn-flex">
+				<a href="Home.html">Back to Home Page</a>
+				<input class="btn" type="submit" value="Register">
+			</div>
 		</form>
 	</div>
 </body>

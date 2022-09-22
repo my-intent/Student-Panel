@@ -3,34 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<title>Student Panel</title>
-	<link rel="stylesheet" href="index.css" >
+	<title>Admin Login</title>
+	<link rel="stylesheet" href="css/style.css" >
 </head>
 <body>
 	<div class="container">
+		<h1 class="heading">Admin Login</h1>
 
-		<div class="left-box box">
-			<a class="btn" href="Form/Registration.html">New Registration</a>
-			<a class="btn" href="Form/Login.html">Login</a>
-		</div>
-
-		<div class="right-box box">
-			<input class="search-bar" type="text" placeholder="search">
-
-			<h1 class="heading">Student Details</h1>
-			<hr color="black">
-			<div class="student-info">
-				<p>Name: Ankit</p>
-				<p>Roll Number: 13</p>
-				<p>Department: BCA</p>
-				<p>Email: Ankit@gmail.com</p>
+		<form id="login-form" action="#" method="post">
+			<div class="box">
+				<input type="email" name="email" class="input-field" placeholder="Enter Email">
 			</div>
-
-			<div class="btn-flex">
-				<button class="edit-btn">Edit</button>
-				<button class="delete-btn">Delete</button>
+			<div class="box">
+				<input type="password" name="upass" class="input-field" placeholder="Enter Password">
 			</div>
-		</div>
+			<input class="btn" type="submit" value="Enter">
+		</form>
 	</div>
 </body>
 </html>
